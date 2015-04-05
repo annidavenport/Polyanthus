@@ -1,0 +1,78 @@
+/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+
+/* We like off-black for text. */
+body, select, input, textarea {color: #333;}
+
+a {color: #333;text-decoration: none;}
+a:hover {color: #ca323e;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;}
+
+/*  j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Include Web fonts
+-------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Lane-Posh';
+    src:url('../fonts/Lane-Posh.ttf.woff') format('woff'),
+        url('../fonts/Lane-Posh.ttf.svg#Lane-Posh') format('svg'),
+        url('../fonts/Lane-Posh.ttf.eot'),
+        url('../fonts/Lane-Posh.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global Font Settings
+-------------------------------------------------------------------------------*/
+
+* {font-family: 'Rokkitt', Courier, 'Courier New', cursive;
+}
+
+h1 {
+    font-size: 5em;
+    text-transform: uppercase;
+    font-family: 'Nixie One', Courier, 'Courier New', cursive;
+}
+h2 {
+    font-family: 'Lane-Posh';
+    font-size: 2.5em;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+footer h3 {margin-bottom: 10px;}
+h4 {}
+h5 {}
+p {font-weight: 300}
+strong {}
+
+.entry-meta {color: #323232;}
+
+
+
+/* Specific Font Settings
+-------------------------------------------------------------------------------*/
+
+
+#banner {color: #fff;}
+#banner-callto p {
+    line-height: 3em;
+}
+#banner-callto a {color: #fff;}
+#banner-callto a:hover {color: #ca323e;}
+
+footer a{
+    color: #8b6976;
+    border-bottom: none;
+
+}

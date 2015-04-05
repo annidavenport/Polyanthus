@@ -1,0 +1,321 @@
+/*
+Theme Name: Polyanthus
+Theme URI: http://underscores.me/
+Author: Anni Davenport
+Author URI: http://underscores.me/
+Description: Polyanthus Wordpress Theme 2015
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: polyanthus
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Polyanthus is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+/* Header structure
+-------------------------------------------------------------------------------*/
+.wrapper {
+    width: 100%;
+}
+header {
+    width: 100%;
+    border-bottom: 5px solid #323232;
+}
+
+header.entry-header{
+	background-color: #323232;
+	color: #fefefe;
+	height: 75px;
+	padding-left: 2%;
+	font-size: 20px;
+	 display: flex;
+    align-items: center; /* align vertical */
+}
+
+.top-bar {
+    height: 50px;
+    background-color: #d6d6d6;
+    text-align: center;
+}
+.top-bar div {
+    display: flex;
+    align-items: center; /* align vertical */
+    justify-content: center; /* align horizontal */
+    height: 50px;
+    float: left;
+}
+
+
+#logo {
+    clear: both;
+    height: 150px;
+    /* Flexbox courtesy of.... */
+    display: flex;
+    align-items: center; /* align vertical */
+    justify-content: center; /* align horizontal */
+}
+#logo h1{
+    text-align: center;
+    margin: 0 auto;
+}
+#logo img {
+    width: 400px;
+
+}
+
+
+/* Body structure
+-------------------------------------------------------------------------------*/
+#banner {
+    width: 100%;
+    height: 400px;
+    background-image: url(assets/images/banner.jpg);
+    background-size: cover;
+    /* Flexbox courtesy of.... */
+    display: flex;
+    align-items: center; /* align vertical */
+}
+
+#banner-overlay {
+    display: inline-block;
+    vertical-align: middle;
+    width: 350px;
+    padding-left: 2%;
+}
+#banner-callto {
+    display: inline-block;
+    vertical-align: middle;
+    width: 350px;
+    margin-left: -20%;
+    padding-left: 22%;
+    background-color: #222;
+    opacity: 0.8;
+}
+
+
+#home-middle {
+    width: 100%;
+    display: inline-block;
+}
+#about-middle {    overflow: auto;
+    background-color: #aef8ef;
+}
+.about-content {
+
+    padding:5%;
+}
+.about-image {padding: 5%;}
+
+#featured {
+    /*width: 20%;*/
+    height: 100%;
+    display: block;
+    /*float: left;*/
+}
+#featured img{
+    width: 100%;
+}
+
+.hover-title {
+    background-color: #d6494f;
+    color: #ccc;
+    margin: -5px 0;
+    padding: 22px;
+}
+
+.page-content {
+    padding: 2%
+}
+
+
+.entry-content {padding: 20px;}
+
+
+article {
+    height:auto;
+    border-bottom: 1px solid #323232
+}
+
+
+
+
+
+footer {
+    clear: both;
+    width: 100%;
+    background-color: #262626;
+    color: #ccc;
+    padding: 2%;
+    overflow: auto;
+}
+
+#footer-copy {
+
+    text-align: right;
+}
+footer ul li {padding-bottom: 10px;}
+
+
+
+
+
+/* Home featured products Styling
+-------------------------------------------------------------------------------*/
+
+
+#quick-browse {
+	padding-top: 30px;
+	height: auto;
+    /*width: 80%;
+    float: left;*/
+}
+#browse-header {
+    width: 100%;
+}
+
+.customposttypelist .tcp-grid-item {
+	min-height: 0px;
+}
+.browse-box {
+    height: 30%;
+    width: 30%;
+    margin-right: 3%;
+    float: left;
+}
+
+.widget-title {display: none}
+
+.widget-area #container{
+	background-color: #fff;
+	color: #fefefe;
+}
+.widget-area a {font-size: 1.5em}
+/* Shop Styling
+-------------------------------------------------------------------------------*/
+
+
+.tcp-grid-item {
+	width: auto;
+	float: left;
+	padding: 0;
+	min-height: 200px;
+}
+
+.image{
+	z-index: -1;
+}
+.bar{
+	height: 50px;
+	margin-top: -60px;
+	position: absolute;
+	right: 20px;
+}
+.tcpf .pagination {
+    float: left;
+}
+
+#container{
+	background-color: #323232;
+	color: #fefefe;
+}
+.overlay{
+ 	width:100%;
+ 	height:100%;
+ 	opacity: 0;
+ 	position: absolute;
+ 	padding: 15px;
+ 	color: #fefefe;
+	top: 0;
+	background-color: transparent;
+	-webkit-transition: opacity .75s ease-out, background-color .75s ease-out;
+  	-moz-transition: opacity .75s ease-out, background-color .75s ease-out;
+  	-o-transition: opacity .75s ease-out, background-color .75s ease-out;
+  	transition: opacity .75s ease-out, background-color .75s ease-out;
+}
+.overlay div {
+    position:relative;
+    z-index: 1;
+    }
+
+.tcp-grid-item:hover .overlay {
+    background-color:black;
+    opacity:0.75;
+
+}
+
+.grid-sizer { width: 25%; }
+.item { width: 25%; }
+
+	@media screen and (max-width: 1224px) {
+	  .grid-sizer { width: 33.33%; }
+	  .item { width: 33.33%; }
+	}
+
+	@media screen and (max-width: 720px) {
+	  .grid-sizer { width: 50%; }
+	  .item { width: 50%; }
+	}
+
+	@media screen and (max-width: 480px) {
+	  .grid-sizer { width: 100%; }
+	  .item { width: 100%; }
+}
+.tcp_order_type label, .tcp_order_desc .form-group .radio {display: none}
+.tcp_order_type {margin-top: -15px;}
+
+
+
+
+/* Contact Form
+-------------------------------------------------------------------------------*/
+
+.wpcf7-form p {
+	margin-bottom: 15px;
+}
+
+
+
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+/*  Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+}
+/*  Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+
+    #logo img {
+        width: 250px;
+    }
+    h2 {font-size: 1.5em}
+}
+/*  Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+
+/* Print styles
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
